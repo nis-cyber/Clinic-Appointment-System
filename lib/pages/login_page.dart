@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:my_clinic_app/pages/signUp_page.dart';
 
 class LoginPage extends StatelessWidget {
   LoginPage({Key? key}) : super(key: key);
+
 
   final usernameController = TextEditingController();
   final passwordController = TextEditingController();
@@ -107,13 +109,17 @@ class LoginPage extends StatelessWidget {
                         style: TextStyle(color: Colors.grey[700]),
                       ),
                       const SizedBox(width: 4),
-                      const Text(
-                        'Register now',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
+                      // const Text(
+                      //   'Register now',
+                      //   style: TextStyle(
+                      //     color: Colors.blue,
+                      //     fontWeight: FontWeight.bold,
+                      //   ),
+                      // ),
+
+                      TextButton(onPressed: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> SignUpPage()));
+                      }, child: Text('Register'))
                     ],
                   ),
                 ],

@@ -107,7 +107,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       ),
                     ),
                     ),
-                    ///terms and Condition Appl y
+                    ///terms and Condition Apply
                     Row(
                       children: [
                         Checkbox(value: true, onChanged: (value){}),

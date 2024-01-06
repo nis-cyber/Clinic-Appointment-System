@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_clinic_app/pages/homePage.dart';
 import 'package:my_clinic_app/pages/signUp_page.dart';
 
 class LoginPage extends StatelessWidget {
@@ -61,7 +62,9 @@ class LoginPage extends StatelessWidget {
                   ),
                   const SizedBox(height: 25),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> HomePage()));
+                    },
                     child: const Text("Sign In"),
                   ),
                   const SizedBox(height: 30),
